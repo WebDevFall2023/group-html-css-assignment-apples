@@ -1,0 +1,85 @@
+body{
+    color: white;
+    text-align: center;
+    background-color: black;
+    /*font-family: Arial, Helvetica, sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px; 
+    height: auto; 
+    padding: 10px;
+}
+.same-size img{
+    width: 200px; 
+    height: auto; 
+}
+nav{
+    background-color: #17191A;
+    text-align: center;
+    /* background: linear-gradient(to right, black, #5e414b); */
+    color: white;
+    padding: 10px;  /* size of nav bar */
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    display: inline-block;
+}
+nav a{ 
+    color: #D0D0D0;
+    padding: 10px 20px; 
+    /* background-color: grey; */
+    text-decoration: none; /* remove underline from text */
+    
+}
+nav a:hover {
+    color: white /* text turns white when hovering over it */
+}
+footer {
+    background-color: #17191A;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    padding: 20px; /* adds 20px of padding on each side */
+    position: fixed; /* fixes the footer to bottom of page*/
+    bottom: 0;
+    width: 100%;    /* footer fills entire webpage from left to right */
+}
+
+    
+a.buy{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(52, 120, 246);
+}
+
+.button {
+    background-color: rgb(52, 120, 246);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+.product{
+    margin: 0;
+    padding: 0;
+}
+.product desc{
+    font-weight: bolder;
+    font-size: 35px;
+}
+.product price{
+    font-weight: bolder;
+}
