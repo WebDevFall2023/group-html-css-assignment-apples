@@ -15,7 +15,7 @@ img {
     height: auto; 
     padding: 10px;
 }
-.same-size img{
+.same-size img {
     width: 200px; 
     height: auto; 
 }
@@ -48,7 +48,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px; /* adds 20px of padding on each side */
-    position: fixed; /* fixes the footer to bottom of page*/
     bottom: 0;
     width: 100%;    /* footer fills entire webpage from left to right */
 }
@@ -83,3 +82,249 @@ a.buy{
 .product price{
     font-weight: bolder;
 }
+
+
+/* ------------ Payment page ------------ */
+#checkout_h1 {
+    margin: 50px auto;
+    font-size: 38px;
+}
+
+#checkout {
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: 55% 40%;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    text-align: left;
+}
+
+    #checkout h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+/* Order Review section */
+#order_review {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+    #order_review div {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 20% 80%;
+        align-items: left;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+
+    #order_review img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: 100px;
+        margin: 20px 30px;
+        padding: 0;
+    }
+
+#product_name {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    height: 30px;
+}
+
+#quantity {
+    font-size: 16px;
+    color: #D0D0D0;
+    height: 50px;
+    margin: 0px;
+}
+
+#price {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+
+/* Summary section */
+#summary {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 20px;
+}
+
+    #summary h3 {
+        margin-left: 26px;
+        margin-bottom: 15px;
+    }
+
+#summary_box {
+    border-color: #e4e4e4;
+    border-width: 1px;
+    border-style: solid;
+    padding: 25px 20px 35px 20px;
+}
+
+#summary_section {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin-top: 0px;
+}
+
+#summary_category {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 30px;
+}
+
+    #summary_category p {
+        color: #dcdcdc;
+        font-size: 20px;
+    }
+
+    #summary_category h4 {
+        color: #e4e4e4;
+        font-size: 22px;
+    }
+
+#summary_prices {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+    #summary_prices p {
+        color: #dcdcdc;
+        font-size: 20px;
+    }
+
+    #summary_prices h4 {
+        color: rgb(255, 86, 64);
+        font-size: 22px;
+    }
+
+#summary button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 90%;
+    height: 50px;
+    border-radius: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+    background-color: #e9e9e9;
+    margin: 20px auto;
+}
+
+    #summary button:hover {
+        background-color: #D0D0D0;
+        color: #313131;
+    }
+
+
+/* Contact Information section */
+#contact_info {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#contact_section {
+    margin: 40px 30px 30px 25px;
+}
+
+    #contact_section p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+
+    #contact_section input {
+        width: 90%;
+        height: 40px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        border-radius: 0px;
+        font-size: 16px;
+    }
+
+
+/* Shipping Address section */
+#shipping_address {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#address_section {
+    margin: 40px 30px 30px 25px;
+}
+
+    #address_section p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+
+    #address_section input {
+        width: 90%;
+        height: 40px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        border-radius: 0px;
+        font-size: 16px;
+    }
+
+    #address_section select {
+        width: 92.5%;
+        height: 44px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 0px;
+        font-size: 16px;
+    }
+
+
+/* Payment section */
+#payment {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#payment_section {
+    margin: 40px 30px 30px 25px;
+}
+
+    #payment_section p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+
+    #payment_section input {
+        width: 90%;
+        height: 40px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        border-radius: 0px;
+        font-size: 16px;
+    }
