@@ -47,11 +47,11 @@ body {
 }
 
 img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 700px;
-  height: auto;
-  padding: 10px;
+  /* width: 200px; 
+            /* height: auto; <!-- this is so that it doesn't stretch the photo --> */
 }
 .same-size img {
   width: 200px;
@@ -70,6 +70,7 @@ nav {
 nav li {
   display: inline-block;
 }
+
 nav a {
   color: #d0d0d0;
   padding: 10px 20px;
@@ -87,36 +88,6 @@ footer {
   padding: 20px 0px 20px 0px; /* adds 20px of padding on each side */
   bottom: 0;
   width: 100%; /* footer fills entire webpage from left to right */
-}
-
-a.buy {
-  text-decoration: none;
-  font-size: 30px;
-  color: rgb(52, 120, 246);
-}
-
-.button {
-  background-color: rgb(52, 120, 246);
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-.product {
-  margin: 0;
-  padding: 0;
-}
-.product desc {
-  font-weight: bolder;
-  font-size: 35px;
-}
-.product price {
-  font-weight: bolder;
 }
 
 /* ------------ Payment page ------------ */
