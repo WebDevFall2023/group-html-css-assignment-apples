@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 body {
   color: white;
   text-align: center;
@@ -9,6 +11,31 @@ body {
   overflow-x: hidden;
   padding: 0;
 }
+
+.navbar {
+  background-color: rgba(31, 31, 31, 0.9); /* Black color with 80% opacity */
+  font-size: 11.5px;
+  font-family: "Inter", sans-serif;
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  top: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  color: rgb(198, 197, 197);
+  text-decoration: none;
+  margin: 0 1.5px;
+  display: inline-block;
+}
+
+.margin-top {
+  margin-top: 45px;
+}
+
 img {
   margin-left: auto;
   margin-right: auto;
@@ -319,11 +346,12 @@ a.buy {
   margin-bottom: 30px;
   padding-left: 20px;
   border-radius: 0px;
-  font-size: 16px;}
-
+  font-size: 16px;
+}
 
 /* home page */
 .hero {
+  margin-top: 50px;
   width: 100%;
   height: 40rem;
   display: inline-block;
@@ -397,19 +425,17 @@ a.buy {
   font-size: 4.5rem;
   font-weight: bold;
   margin: 0;
-  
 }
 
+/* footer styling */
 
-    /* footer styling */
-
-    @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'roboot', sans-serif;
+  font-family: "roboot", sans-serif;
   text-decoration: none;
 }
 nav {
@@ -491,7 +517,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: .5s;
+  transition: 0.5s;
 }
 .grid-product:hover {
   background: #e1e1e1;
@@ -504,7 +530,7 @@ nav ul li a:hover {
   text-align: center;
 }
 .grid-detail p:last-child {
-  transition: .5s;
+  transition: 0.5s;
   margin-top: 10px;
 }
 .grid-product:hover > .grid-detail p:last-child {
@@ -545,93 +571,93 @@ nav ul li a:hover {
 
 /*--- footer ---*/
 footer {
-    width: 100%;
-    height: 500px;
-    /* might consider a black background? */
-    background: #f1f1f1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 500px;
+  /* might consider a black background? */
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer-main {
-     width: 1070px;
+  width: 1070px;
 }
 .footer-welcome {
-    display: flex;
-    margin: 20px 0;
-    font-size: .8rem;
-    color: #34495e;
+  display: flex;
+  margin: 20px 0;
+  font-size: 0.8rem;
+  color: #34495e;
 }
 /* .footer-welcome i { */
-    /* margin-left: 80px;  */
+/* margin-left: 80px;  */
 /* } */
 .footer-ul {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .footer-ul ul {
-/* hide bullet point styling*/
-    list-style: none;
+  /* hide bullet point styling*/
+  list-style: none;
 }
 .footer-ul ul li {
-/* add line spacing  */
-    margin: 7px 0;
+  /* add line spacing  */
+  margin: 7px 0;
 }
-.footer-ul ul li h4 { 
-/* bolden subheading text  */
-    color: #34495e;
-    font-size: .7rem;
+.footer-ul ul li h4 {
+  /* bolden subheading text  */
+  color: #34495e;
+  font-size: 0.7rem;
 }
 .footer-ul ul li a {
-/* "clickable" links */
-    color: #7f8c8d;
-    font-size: .7rem;
+  /* "clickable" links */
+  color: #7f8c8d;
+  font-size: 0.7rem;
 }
 .footer-ul ul li a:hover {
-    text-decoration: underline; 
+  text-decoration: underline;
 }
 #line-gap {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 .footer-contact {
-/* contact info */
-    text-align: left;
-    border-bottom: 1px solid #bdc3c7;
-    padding: 12px 0;
-    margin: 10px 0;
-    color: #7f8c8d;
-    font-size: .7rem;
+  /* contact info */
+  text-align: left;
+  border-bottom: 1px solid #bdc3c7;
+  padding: 12px 0;
+  margin: 10px 0;
+  color: #7f8c8d;
+  font-size: 0.7rem;
 }
 .footer-contact a {
-/* find our locations */
-    color: #3498db;
+  /* find our locations */
+  color: #3498db;
 }
 .footer-contact a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .footer-copyright {
-    color: #7f8c8d;
-    font-size: .7rem;
-    display: flex;
-    /* privacy policy, terms, etc should be slightly moved left  */
-    justify-content: space-between;
+  color: #7f8c8d;
+  font-size: 0.7rem;
+  display: flex;
+  /* privacy policy, terms, etc should be slightly moved left  */
+  justify-content: space-between;
 }
 .footer-copyright ul {
-    display: flex;
-    list-style: none;
-    width: auto;
+  display: flex;
+  list-style: none;
+  width: auto;
 }
 .footer-copyright ul li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 .footer-copyright ul li a {
-    color: #7f8c8d;
+  color: #7f8c8d;
 }
 .footer-copyright ul li a:hover {
-    text-decoration: underline; 
+  text-decoration: underline;
 }
 .vertical-line {
-    height: 15px;
-    width: 1px;
-    background: #bdc3c7;
+  height: 15px;
+  width: 1px;
+  background: #bdc3c7;
 }

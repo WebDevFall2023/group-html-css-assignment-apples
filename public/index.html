@@ -1,92 +1,94 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Home Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<body>
-    <nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Apples.html">Apples</a></li>
-        <li><a href="AppleJuice.html">Apple Juice</a></li>
-        <li><a href="ApplePie.html">Apple Pie</a></li>
-        <li><a href="AppleSauce.html">Apple Sauce</a></li>
-        <li><a href="AppleFritter.html">Apple Fritter</a></li>
-        <li><a href="CandyApple.html">Candy Apple</a></li>
-        <li><a href="Accessories.html">Accessories</a></li>
-        <li><a href="FAQ.html">FAQ<a></li>
+  <body>
+    <nav class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Apples.html">Apples</a></li>
+      <li><a href="AppleJuice.html">Apple Juice</a></li>
+      <li><a href="ApplePie.html">Apple Pie</a></li>
+      <li><a href="AppleSauce.html">Apple Sauce</a></li>
+      <li><a href="AppleFritter.html">Apple Fritter</a></li>
+      <li><a href="CandyApple.html">Candy Apple</a></li>
+      <li><a href="Accessories.html">Accessories</a></li>
+      <li><a href="FAQ.html">FAQ<a></li>
     </nav>
 
-   <div class="hero">
-    <div class="header">
-        <H1>The Fritter Pro</H1>
+    <div class="hero">
+      <div class="header">
+        <h1>The Fritter Pro</h1>
         <p class="subtitle">Apple. So healthy. So light. So pie.</p>
         <div class="links">
-            <a href="buy">Learn More</a>
-          
+          <a href="buy">Learn More</a>
         </div>
-        
+      </div>
+      <img
+        class="img"
+        src="https://media.istockphoto.com/id/470858152/photo/toffee-apple.jpg?s=612x612&w=0&k=20&c=fBkr1UD4NwV3ePFXxKZaybDZXg02ixlrgamclOSk-Ww="
+        alt="Image"
+      />
     </div>
-    <img class="img" src="https://media.istockphoto.com/id/470858152/photo/toffee-apple.jpg?s=612x612&w=0&k=20&c=fBkr1UD4NwV3ePFXxKZaybDZXg02ixlrgamclOSk-Ww=" alt="Image"> 
-   </div>
 
     <div class="split-hero-container">
-        <div class="split-hero">
-            <p class="new-tag">New</p>
-            <div class="header">
-               
-                <h1>Juices</h1>
-                <p class="sub-title">Packed with more juice</p> 
-                <p class="pricing">From $399</p>
-            </div>
-            
-            <div class="links">
-                <a href="buy">Buy</a>
-            </div>
-            <img src= "./images/angled-apple-juice-glass-with-no-label-10oz_911x1021.png"alt="test"> 
+      <div class="split-hero">
+        <p class="new-tag">New</p>
+        <div class="header">
+          <h1>Juices</h1>
+          <p class="sub-title">Packed with more juice</p>
+          <p class="pricing">From $399</p>
         </div>
-        <div class="split-hero">
-            <p class="new-tag">New</p>
-            <div class="header">
-               
-                <h1>PiMac</h1>
-                <p class="sub-title">Meet the next generation of Pie</p> 
-                <p class="pricing">From $999 or $41.62/mo. for 24 mo.</p>
-            </div>
-            
-            <div class="links">
-                <a href="buy">Buy</a>
-            </div>
-            <img src= "./images/pie.png"alt="test"> 
+
+        <div class="links">
+          <a href="buy">Buy</a>
         </div>
+        <img
+          src="./images/angled-apple-juice-glass-with-no-label-10oz_911x1021.png"
+          alt="test"
+        />
+      </div>
+      <div class="split-hero">
+        <p class="new-tag">New</p>
+        <div class="header">
+          <h1>PiMac</h1>
+          <p class="sub-title">Meet the next generation of Pie</p>
+          <p class="pricing">From $999 or $41.62/mo. for 24 mo.</p>
+        </div>
+
+        <div class="links">
+          <a href="buy">Buy</a>
+        </div>
+        <img src="./images/pie.png" alt="test" />
+      </div>
     </div>
     <div class="side-hero">
-        <div class="header">
-            <p class="title">
-                Join in on the fun and get <span style="color: red;">classy</span>
-            </p>
-            <p>take it back to what you know best with our classic Red Apples that are now going for their best price</p>
-            <p class="pricing">From $999 or $41.62/mo. for 24 mo.</p>
-            <a class="button" href="buy">Buy</a>
-        </div>
-        <img src="https://c4.wallpaperflare.com/wallpaper/511/628/911/red-apple-black-background-wallpaper-thumb.jpg">
-
+      <div class="header">
+        <p class="title">
+          Join in on the fun and get <span style="color: red;">classy</span>
+        </p>
+        <p>
+          take it back to what you know best with our classic Red Apples that
+          are now going for their best price
+        </p>
+        <p class="pricing">From $999 or $41.62/mo. for 24 mo.</p>
+        <a class="button" href="buy">Buy</a>
+      </div>
+      <img
+        src="https://c4.wallpaperflare.com/wallpaper/511/628/911/red-apple-black-background-wallpaper-thumb.jpg"
+      />
     </div>
     <div id="footerContainer"></div>
     <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footerContainer').innerHTML = data;
-            });
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footerContainer").innerHTML = data;
+        });
     </script>
 
-    <div class="product-options">
-
-    </div>
-</body>
-
+    <div class="product-options"></div>
+  </body>
 </html>
-
