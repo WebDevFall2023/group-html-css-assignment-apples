@@ -74,9 +74,14 @@
         <img src="https://c4.wallpaperflare.com/wallpaper/511/628/911/red-apple-black-background-wallpaper-thumb.jpg">
 
     </div>
-    <footer>
-        Copyright &copy; 2023 Apples Inc. All rights reserved.    <!--Privacy Policy Terms of Use Sales and Refunds Legal Site Map-->
-    </footer>
+    <div id="footerContainer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerContainer').innerHTML = data;
+            });
+    </script>
 
     <div class="product-options">
 

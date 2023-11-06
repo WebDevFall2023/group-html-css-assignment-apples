@@ -26,8 +26,13 @@
         <img src="images/angled-apple-juice-glass-with-no-label-10oz_911x1021.png" alt="AppleJuice">
     </div>
     
-    <footer>
-        Copyright &copy; 2023 Apples Inc. All rights reserved.    <!--Privacy Policy Terms of Use Sales and Refunds Legal Site Map-->
-    </footer>
+    <div id="footerContainer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerContainer').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
