@@ -5,16 +5,16 @@ body {
   text-align: center;
   background-color: black;
   /*font-family: Arial, Helvetica, sans-serif; */
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  font-family: "Inter", sans-serif;
   margin: 0;
-
   overflow-x: hidden;
   padding: 0;
 }
 
 .navbar {
   background-color: rgba(31, 31, 31, 0.9); /* Black color with 80% opacity */
-  font-size: 11.5px;
+  font-size: 12px;
   font-family: "Inter", sans-serif;
   position: fixed;
   width: 100%;
@@ -34,6 +34,16 @@ body {
 
 .margin-top {
   margin-top: 45px;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    font-size: 10px; /* Adjust the font size for smaller screens */
+  }
+
+  .navbar a {
+    margin: 0 0.5px; /* Adjust the margin for smaller screens */
+  }
 }
 
 img {
@@ -350,6 +360,16 @@ a.buy {
 }
 
 /* home page */
+.hero-main-container {
+  margin-top: 2.5%;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 3.5em;
+  /* font-weight: 400; */
+}
+
 .hero {
   margin-top: 50px;
   width: 100%;
@@ -361,6 +381,8 @@ a.buy {
 }
 
 .hero .header {
+  /* margin-top: 5%; */
+  font-weight: 400;
   margin: auto;
   width: 50%;
   text-align: center;
@@ -368,7 +390,7 @@ a.buy {
 
 .hero .subtitle {
   font-size: larger;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .hero .links {
@@ -435,7 +457,8 @@ a.buy {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "roboot", sans-serif;
+  font-family: "Inter", sans-serif;
+  /* font-family: "roboot", sans-serif; */
   text-decoration: none;
 }
 nav {
