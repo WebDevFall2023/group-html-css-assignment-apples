@@ -1,13 +1,27 @@
 .container
 {
+    width: auto;
+    padding-left: 300px;
+    padding-right: 300px;
+    text-align: center;
     .labels
     {
+        width:80%;
+        padding-left: 100px;
+        padding-right: 100px;
+        position: relative;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        text-align: left;
         .answerFaq
         {
-            background-color: rgb(56, 53, 53);
-            width: 100%;
-            text-align: center;
-            border-color: red;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            text-align: left;
         }
     }
+    
 }
+

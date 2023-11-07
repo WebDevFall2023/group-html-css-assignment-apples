@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <title>FAQ</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css"  href="faqStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faqStyle.css">
 </head>
 <body>
     <main>
@@ -20,8 +20,8 @@
           </nav>
           <div class="margin-top">
         <div class="title">
-            <h1>FAQ</h1>
-            <h4>Frequently Ask Questions</h4>
+            <h5>FAQ</h5>
+            <h6>Frequently Ask Questions</h>
             <hr>
         </div>
         <div class="container">
@@ -35,9 +35,43 @@
                     in your fridge until you are ready to eat them. Ensure apples are stored away from other fragrant fresh produce (like onions) 
                     as their odors can alter the taste of the fruit. Wash the fruit prior to eating and enjoy!
                 </p>
+                <label for="Questions" class="topicFaq">
+                    Why is there wax on conventional apples?
+                </label>
+                <p class="answerFaq">
+                    Freshly harvested apples have a natural wax coating that protects them from shriveling and moisture loss, 
+                    however it is unfortunately removed when it is washed and scrubbed prior to being packed. On conventional apples, 
+                    Stemilt replaces the natural wax with a thin layer of food-grade wax (which is approved by the U.S. Food and Drug Administration) 
+                    that is carnauba or shellac based. These waxes are natural, non-petroleum based coatings with no known allergens as ingredients, including: 
+                    milk, soy, casein or gluten.
+                </p>
+                <label for="Questions" class="topicFaq">
+                    How do I remove the wax on conventional apples?
+                </label>
+                <label for="Questions" class="topicFaq">
+                    I spotted a white residue on the stem bowl of apple. What is it?
+                </label>
+                <p class="answerFaq">
+                    This is Kaolin clay, a natural material that we apply to protect apples (and pears too) from getting sunburned. 
+                    Yup, even fruit can get sunburned! The clay reflects the sun preventing the burn. 
+                    It’s usually washed off the fruit during packing but some residue can be left behind in the stem/bottom ends of the fruit, 
+                    where the brushes don’t reach.
+                </p>
             </div>
         </div>
-
+        <div id="footerContainer">
+    
+            <script>
+        
+              fetch("footer.html")
+                .then((response) => response.text())
+                .then((data) => {
+                  document.getElementById("footerContainer").innerHTML = data;
+                });
+            </script>
+        
+            <div class="product-options"></div>
+          </div>
         <footer>
             Copyright &copy; 2023 Apples Inc. All rights reserved.    <!--Privacy Policy Terms of Use Sales and Refunds Legal Site Map-->
         </footer>
