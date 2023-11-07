@@ -57,7 +57,7 @@ a.buy {
     color: transparent;
 }
 .product pieColor {
-    background: linear-gradient(to right, #3478F6, #DFA95F);
+    background: linear-gradient(to right, #9E41F6, #DFA95F);
     background-clip: text;
     color: transparent;
 }
