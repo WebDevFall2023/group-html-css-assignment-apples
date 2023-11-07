@@ -81,7 +81,7 @@ details[open] div {
 {
     content: "";
     position: absolute;
-    height: 65%;
+    height: 60%;
     width: 90%;
     background: linear-gradient(red, purple, blue);
     z-index: -1;
@@ -94,6 +94,6 @@ details[open] div {
 .glowing-border:hover::after
 {
     height: 97%;
-    width: 99%;
+    width: 103%;
 }
 
