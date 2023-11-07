@@ -355,6 +355,13 @@ footer {
   /* font-weight: 400; */
 }
 
+.faq-title {
+  font-family: "Inter", sans-serif;
+  font-size: 3.75em;
+  /* margin: 5%; */
+  margin-top: 10%;
+}
+
 .hero {
   /* margin-top: 50px; */
   width: 100%;

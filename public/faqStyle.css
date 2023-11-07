@@ -1,29 +1,53 @@
-.container
-{
-    width: auto;
-    padding-left: 300px;
-    padding-right: 300px;
-    text-align: center;
-    .labels
-    {
-        width:80%;
-        padding-left: 100px;
-        padding-right: 100px;
-        position: relative;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        text-align: left;
-        font-size: 25px;
-        .answerFaq
-        {
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: 50px;
-            text-align: left;
-            font-size: 20px;
-        }
-    }
-    
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+body {
+  background-color: #000;
+  font-family: "Open Sans", sans-serif;
 }
 
+.container {
+  width: 710px;
+  margin: 0 auto; /* Centering the container horizontally */
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10%;
+}
+
+details {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 auto; /* Centering the details within the container */
+  max-width: 710px; /* Adjust width of details if needed */
+  text-align: left; /* Reset text alignment for details */
+}
+
+summary {
+  padding: 1em 0.5rem;
+  font-size: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: height 1s ease;
+  text-align: left;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after {
+  content: "\002B";
+}
+
+details[open] summary {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 0.5em;
+}
+
+details[open] summary:after {
+  content: "\00D7";
+}
+
+details[open] div {
+  padding: 0.5em 1em;
+}
