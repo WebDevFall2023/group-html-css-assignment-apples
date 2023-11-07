@@ -5,17 +5,14 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Apples.html">Apples</a>
-        <a href="AppleJuice.html">Apple Juice</a>
-        <a href="ApplePie.html">Apple Pie</a>
-        <a href="AppleSauce.html">Apple Sauce</a>
-        <a href="AppleFritter.html">Apple Fritter</a>
-        <a href="CandyApple.html">Candy Apple</a>
-        <a href="Accessories.html">Accessories</a>
-        <a href="FAQ.html">FAQ</a>
-    </nav>
+    <div id="navbarContainer"></div> 
+    <script>
+      fetch("navbar.html")
+         .then(response => response.text())
+         .then(data => {
+          document.getElementById("navbarContainer").innerHTML = data;
+        });
+    </script>
 
     <h1 id="checkout_h1">Checkout</h1>
 
