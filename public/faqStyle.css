@@ -5,6 +5,19 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.navbar
+{
+  z-index: 1;
+}
+
+p
+{
+  font-size: 1.3rem;
+  text-align: center;
+  justify-content: center;
+  padding: 2.5%;
+}
+
 .container {
   width: 710px;
   margin: 0 auto; /* Centering the container horizontally */
@@ -15,7 +28,7 @@ body {
 
 details {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.5rem!important;
   margin: 0 auto; /* Centering the details within the container */
   max-width: 710px; /* Adjust width of details if needed */
   text-align: left; /* Reset text alignment for details */
@@ -23,7 +36,7 @@ details {
 }
 
 summary {
-  padding: 1em 0.5rem;
+  padding: 1em 2rem;
   font-size: 2rem;
   list-style: none;
   display: flex;
@@ -42,7 +55,6 @@ summary:after {
 
 details[open] summary {
   border-bottom: 1px solid #ffffff;
-  margin-bottom: 0.5em;
 }
 
 details[open] summary:after {
@@ -69,20 +81,19 @@ details[open] div {
 {
     content: "";
     position: absolute;
-    height: 70%;
+    height: 65%;
     width: 90%;
-    background: linear-gradient(red, blue);
+    background: linear-gradient(red, purple, blue);
     z-index: -1;
     filter: blur(20px);
     border-style: solid;
+    transition: all 500ms;
 
 }
-
 
 .glowing-border:hover::after
 {
-    height: 106%;
-    width: 100%;
+    height: 97%;
+    width: 99%;
 }
-
 
