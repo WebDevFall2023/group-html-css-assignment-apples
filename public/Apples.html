@@ -19,37 +19,32 @@
          </nav>
     <br>
     <div class="margin-top">
-    <div class="product">
-        <p style="color: #FF9500">New</p>
-        <h2>Red Pro</h2> 
-        <desc>Crimson Powerhouse</desc>
-        <p>From $999 or $41.62/mo. for 24 mo.</p>
-        <a href="payment.html" class="button">Buy</a>
-       
-        <img src= "images/Frame 1.png"alt="test"> 
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="product">
-        <p style="color: #FF9500">New</p>
-        <h2>Fuji Max </h2> 
-        <desc>Fuji Fantasia</desc>
-        <p>From $799 or $33.29/mo. for 24 mo.</p>
-        <a href="payment.html" class="button">Buy</a>
-        <br>
-        <img src= "images/FujiNEW.png"alt="test"> 
-    </div>
-    
-
-    <div id="footerContainer"></div>
-    <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footerContainer').innerHTML = data;
-            });
-    </script>
+        <div class="product">
+            <p style="color: #FF9500">New</p>
+            <h2>Red Pro</h2> 
+            <desc><redColor>Crimson Powerhouse</redColor> </desc>
+            <p>From $999 or $41.62/mo. for 24 mo.</p>
+            <a href="payment.html" class="button">Buy</a>
+            <img src= "images/Frame 1.png"alt="test"> 
+            <br>
+            <br>
+            <br>
+            <p style="color: #FF9500">New</p>
+            <h2>Fuji Max </h2> 
+            <desc><fujiColor>Fuji Fantasia</fujiColor></desc>
+            <p>From $799 or $33.29/mo. for 24 mo.</p>
+            <a href="payment.html" class="button">Buy</a>
+            <br>
+            <img src= "images/FujiNEW.png"alt="test"> 
+        </div>
+        <div id="footerContainer"></div>
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footerContainer').innerHTML = data;
+                });
+        </script>
     </div>
 </body>
 </html>

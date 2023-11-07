@@ -3,6 +3,8 @@
 <head>
     <title>Accessories</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel = "stylesheet" type="text/css" href="productStyle.css">
+
 </head>
 <body>
     <nav class="navbar">
@@ -15,17 +17,39 @@
         <li><a href="CandyApple.html">Candy Apple</a></li>
         <li><a href="Accessories.html">Accessories</a></li>
         <li><a href="FAQ.html">FAQ<a></li>
-      </nav>
-      
-    <div id="footerContainer"></div>
-    
-    <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footerContainer').innerHTML = data;
-            });
-    </script>
+    </nav>
+    <br>
+    <div class="margin-top">
+        <div class="product">
+            <h2>Apple Bag</h2> 
+            <p>$399.00</p>
+            <a href="payment.html" class="button">Buy</a>
+            <br>
+            <img src= "images/appleBag.png"alt="Apple Bag"> 
+            <br>
+            <br>
+            <br>
+            <h2>Apple Peeler</h2> 
+            <p>$149.00</p>
+            <a href="payment.html" class="button">Buy</a>
+            <img src= "images/applePeeler.png"alt="Apple Peeler"> 
+            <br>
+            <br>
+            <br>
+            <h2>Apple Corer</h2> 
+            <p>$59.00</p>
+            <a href="payment.html" class="button">Buy</a>
+            <br>
+            <img src= "images/appleCorer.png"alt="Apple Corer"> 
+        </div>
+        <div id="footerContainer"></div>
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footerContainer').innerHTML = data;
+                });
+        </script>
     </div>
 </body>
 </html>
