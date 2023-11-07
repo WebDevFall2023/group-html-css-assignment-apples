@@ -19,6 +19,7 @@ details {
   margin: 0 auto; /* Centering the details within the container */
   max-width: 710px; /* Adjust width of details if needed */
   text-align: left; /* Reset text alignment for details */
+  background-color: black;
 }
 
 summary {
@@ -51,3 +52,37 @@ details[open] summary:after {
 details[open] div {
   padding: 0.5em 1em;
 }
+
+.glowing-border
+{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.glowing-border::after 
+{
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 90%;
+    background: linear-gradient(red, blue);
+    z-index: -1;
+    filter: blur(20px);
+    border-style: solid;
+
+}
+
+
+.glowing-border:hover::after
+{
+    height: 106%;
+    width: 100%;
+}
+
+
