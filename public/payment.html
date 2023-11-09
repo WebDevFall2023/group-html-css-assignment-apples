@@ -5,29 +5,22 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<<<<<<< HEAD
-    <div id="navbarContainer"></div> 
-    <script>
-      fetch("navbar.html")
-         .then(response => response.text())
-         .then(data => {
-          document.getElementById("navbarContainer").innerHTML = data;
-        });
-    </script>
-=======
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Apples.html">Apples</a>
-        <a href="AppleJuice.html">Apple Juice</a>
-        <a href="ApplePie.html">Apple Pie</a>
-        <a href="AppleSauce.html">Apple Sauce</a>
-        <a href="AppleFritter.html">Apple Fritter</a>
-        <a href="CandyApple.html">Candy Apple</a>
-        <a href="Accessories.html">Accessories</a>
-        <a href="FAQ.html">FAQ</a>
-        <a href="Login.html" id="logIn_nav">Log In<a>
-    </nav>
->>>>>>> 5c490b0 (add log in page)
+    <nav class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Apples.html">Apples</a></li>
+        <li><a href="AppleJuice.html">Apple Juice</a></li>
+        <li><a href="ApplePie.html">Apple Pie</a></li>
+        <li><a href="AppleSauce.html">Apple Sauce</a></li>
+        <li><a href="AppleFritter.html">Apple Fritter</a></li>
+        <li><a href="CandyApple.html">Candy Apple</a></li>
+        <li><a href="Accessories.html">Accessories</a></li>
+        <li><a href="FAQ.html">FAQ<a></li>
+       
+        <li><a href="Login.html" id="logIn_nav">Log In<a></li>
+          <li>
+            <input class="text-field" type="text" name="search" placeholder="Search Apple..">
+          </li>
+      </nav>
 
     <h1 class="title_h1">Checkout</h1>
 

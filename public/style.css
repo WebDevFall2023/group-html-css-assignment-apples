@@ -770,3 +770,8 @@ footer {
 #logIn_nav {
   float: right;
 }
+
+
+.text-field {
+  padding: 6px 90px 6px 12px;
+}
