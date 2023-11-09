@@ -779,7 +779,6 @@ footer {
   float: right;
 }
 
-
 .text-field {
   padding: 6px 90px 6px 12px;
 }
@@ -787,4 +786,23 @@ footer {
 .auth {
   background-color: #f1f1f1;
   color: rgb(25, 25, 25);
+}
+
+/*About Us styles*/
+.about-title {
+  font-family: "Inter", sans-serif;
+  font-size: 10em;
+  /* margin: 5%; */
+  margin-top: 5%;
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container p {
+  font-weight: bolder;
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 5%;
 }
