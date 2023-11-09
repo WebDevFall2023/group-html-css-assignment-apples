@@ -99,8 +99,8 @@ footer {
 }
 
 /* ------------ Payment page ------------ */
-#checkout_h1 {
-  margin: 50px auto;
+.title_h1 {
+  margin: 100px auto 50px;
   font-size: 38px;
 }
 
@@ -724,4 +724,49 @@ footer {
   height: 15px;
   width: 1px;
   background: #bdc3c7;
+}
+
+/* Log In page */
+
+#log_in {
+  margin: 0px auto 400px;
+  width: 30%;
+  text-align: left;
+}
+
+#log_in p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+#log_in input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-radius: 0px;
+  font-size: 16px;
+}
+
+#log_in button {
+  width: 20%;
+  height: 45px;
+  border-radius: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(32, 32, 32);
+  background-color: #cccccc;
+  margin-top: 30px;
+  float: right;
+}
+
+#log_in button:hover {
+  background-color: #d0d0d0;
+  color: #313131;
+}
+
+#logIn_nav {
+  float: right;
 }
