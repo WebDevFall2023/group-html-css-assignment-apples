@@ -10,7 +10,7 @@ body {
   z-index: 1;
 }
 
-newName
+newName /* make sure this class doesn't select p tags or it messses with footers' p tags */
 {
   font-size: 1.3rem;
   text-align: center;
