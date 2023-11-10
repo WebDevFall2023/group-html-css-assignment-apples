@@ -147,96 +147,14 @@
     </div>
     <div id="footerContainer">
     
-      <footer>
-        <div class="footer-main">
+      <script>
   
-        <div class="footer-welcome">
-            <!-- apple changes this text varying on the page, maybe remove overall -->
-            <p>Apple Store</p>
-        </div> 
-        
-        <div class="footer-ul">
-
-          <ul>  <!-- column 1 -->
-                <li><h4>Shop and Learn</h4></li>
-                <li><a href="Apples.html">Apples</a></li>
-                <li><a href="AppleJuice.html">Apple Juice</a></li>
-                <li><a href="ApplePie.html">Apple Pie</a></li>
-                <li><a href="AppleSauce.html">Apple Sauce</a></li>
-                <li><a href="CandyApple.html">Candy Apple</a></li>
-                <li><a href="Accessories.html">Accessories</a></li>
-          </ul>
-          
-          <!-- Clickable links below just reload the same website -->
-
-          <ul>  <!-- column 2 -->
-                <li><h4>Apple Store</h4></li>
-                <li><a href="">Apple Store App</a></li>
-                <li><a href="">Financing</a></li>
-                <li><a href="">Order Status</a></li>
-                <li><a href="">Shopping Help</a></li>
-          </ul>
-          
-          <ul>  <!-- column 3 -->
-                <li><h4>For Education</h4></li>
-                <li><a href="">Apple and Education</a></li>
-                <li><a href="">Shop for College</a></li>
-                <li id="line-gap"><h4>For Business</h4></li>
-                <li><a href="">Apple and Business</a></li>
-                <li><a href="">shop for Business</a></li>
-          </ul>
-          
-          <ul>  <!-- column 4 -->
-                <li><h4>Account</h4></li>
-                <li><a href="">Manage Your Apple ID</a></li>
-                <li><a href="">Apple Store Account</a></li>
-                <li><a href="">iClound.com</a></li>
-                <li id="line-gap"><h4>Apple Values</h4></li>
-                <li><a href="">Accessibility</a></li>
-                <li><a href="">Environment</a></li>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Supplier Responsibility</a></li>
-          </ul>
-          
-          <ul>  <!-- column 5 -->
-                <li><h4>About Apple</h4></li>
-                <li><a href="FAQ.html">Faq</a></li>
-                <li><a href="">Newsroom</a></li>
-                <li><a href="">Investors</a></li>
-                <li><a href="">Events</a></li>
-                <li><a href="">Contact Apple</a></li>
-          </ul>
-        </div>
-        <br>
-        
-        <div class="footer-contact">
-            <p>More ways to shop: visit an <a href="">Apples Store, </a>Call 1‑800‑4‑APPLES, or <a href="">find a seller</a></p>
-        </div>
-        <div class="footer-copyright">
-            <p>Copyright &copy; 2023 Apples Inc. All rights reserved.</p>
-          
-          <ul>
-                <li><a href="">Privacy Policy</a></li>
-                <div class="vertical-line"></div> 
-                <li><a href="">Terms of Use</a></li>
-                <div class="vertical-line"></div>
-                <li><a>Sales and Refunds</a></li>
-                <div class="vertical-line"></div>
-                <li><a href="">Legal</a></li>
-                <div class="vertical-line"></div>
-                <li><a href="">Sitemap</a></li>
-          </ul>
-          
-        <div class="footer">
-            </div>
-            <p>United States</p>
-            </div>
-        </div>
-        
-        </div>
-    </footer>
-
-    <div class="product-options"></div>
-  </div>
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footerContainer").innerHTML = data;
+          });
+      </script>
+  
   </body>
 </html>
