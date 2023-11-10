@@ -5,23 +5,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Apples.html">Apples</a></li>
-        <li><a href="AppleJuice.html">Apple Juice</a></li>
-        <li><a href="ApplePie.html">Apple Pie</a></li>
-        <li><a href="AppleSauce.html">Apple Sauce</a></li>
-        <li><a href="AppleFritter.html">Apple Fritter</a></li>
-        <li><a href="CandyApple.html">Candy Apple</a></li>
-        <li><a href="Accessories.html">Accessories</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="FAQ.html">FAQ<a></li>
-       
-        <li><a href="Login.html" id="logIn_nav">Log In<a></li>
-          <li>
-            <input class="text-field" type="text" name="search" placeholder="Search Apple..">
-          </li>
-      </nav>
+    <div id="navbarContainer">
+    <script>
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbarContainer").innerHTML = data;
+          });
+      </script>
+      </div>
 
     <h1 class="title_h1">Checkout</h1>
 
@@ -45,7 +37,7 @@
                     <section id="summary_category">
                         <p>Subtotal</p>
                         <p>Estimated Shipping</p>
-                        <p>Extimated Tax</p>
+                        <p>Estimated Tax</p>
                         <h4>Total</h4>
                     </section>
                     <section id="summary_prices">
