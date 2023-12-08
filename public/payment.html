@@ -30,6 +30,7 @@
             </div>
         </section>
 
+        <form action="/placeorder" method="post">
         <section id="summary">
             <div id="summary_box">
                 <h3>Order Summary</h3>
@@ -138,10 +139,11 @@
                 <p>Card Number</p>
                 <input type="text" name="card_number" placeholder="Please enter 16 digits">
                 <p>Expiration Date</p>
-                <input type="text" name="card_number" placeholder="MM/YY">
+                <input type="text" name="expiration_date" placeholder="MM/YY">
                 <p>CVC</p>
-                <input type="text" name="card_number" placeholder="ex. 000" title="Please enter numbers only.">
+                <input type="text" name="cvc" placeholder="ex. 000" title="Please enter numbers only.">
         </section>
+    </form>
     </div>
 
     <div id="footerContainer">
