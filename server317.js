@@ -6,8 +6,19 @@ var path = require('path');
 var express = require('express');
 var app = express();
 const fs = require('fs');
+const mysql = require("mysql2/promise")
 
 var StaticDirectory = path.join(__dirname, 'public');
+
+
+//Create user pool
+const pool = mysql.createPool({
+    host:"localhost",
+    user:"student",
+    password:"student",
+    database:"sfsu",
+    connectionLimit: 1
+});
 
 app.use(express.static(StaticDirectory));
 app.use(express.urlencoded({extended:true}));
@@ -41,8 +52,41 @@ app.post("/placeorder", (req, res)=>{
     res.send("Yor order has been placed!")
 })
 
+app.post("/register_user", async (req, res) => {
+    try {
+        console.log(req.body)
+    var payload = req.body
+    const connection = await pool.getConnection();
+    await connection.execute(
+        'INSERT INTO user (user_name, email, password) VALUES (?,?,?)', [payload.userName, payload.email, payload.password]
+    );
+    connection.release();
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+    } catch (error) {
+        console.log("Error at /register_user", error)
+    }
+})
+
+app.get("/login_user", async (req, res) => {
+    try {
+        console.log(req.body)
+    var payload = req.body
+    const connection = await pool.getConnection();
+    var response = await connection.execute(
+        'SELECT * FROM user WHERE email = ?, password = ?', [payload.email, payload.password]
+    );
+
+    console.log(response)
+    connection.release();
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+    } catch (error) {
+        console.log("Error at /login_user", error)
+    }
+})
+
 app.listen(port, () => {
     console.log(`Listening on http://localhost:${port}/`);
 });
 
-console.log(message);
+
+
