@@ -4,6 +4,7 @@
     <title>AppleSauce</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel = "stylesheet" type="text/css" href="productStyle.css">
+    <script defer src="products.js"></script>
 </head>
 <body>
   <div id="navbarContainer">
@@ -13,28 +14,40 @@
           .then((data) => {
             document.getElementById("navbarContainer").innerHTML = data;
           });
-      </script>
-      </div>
-      <br>
-    <div class="margin-top">
-        <div class="product">
-            <h2>Sauce</h2> 
-            <desc>Pure <sauceColor>delight</sauceColor> in every <sauceColor2>bite.</sauceColor2></desc> 
-            <p>From $299</p>
-            <a href="payment.html" class="button">Buy</a>
-            <img src="images/AppleSauce.png" alt="Apple Sauce">
+    </script>
+  </div>
+  <div class="product">
+    <section class="hiddenDesc">
+      <div class="description">
+        <div class="description hiddenDesc">
+          <h2>Apple Pie</h2>
         </div>
-    <div id="footerContainer">
-    
-        <script>
-    
-          fetch("footer.html")
-            .then((response) => response.text())
-            .then((data) => {
-              document.getElementById("footerContainer").innerHTML = data;
-            });
-        </script>
-    
-    </div>
+        <div class="description hiddenDesc">
+          <desc>Pure <sauceColor>delight</sauceColor> in every <sauceColor2>bite.</sauceColor2></desc> 
+        </div>
+        <div class="description hiddenDesc">
+          <p>From $299</p>
+        </div>
+        <div class="description hiddenDesc">
+          <a href="payment.html" class="button">Buy</a>
+        </div>
+        <div class="description hiddenDesc">
+        </div>
+        <div class="description hidden">
+          <img src="images/AppleSauce.png" alt="Apple Sauce">
+        </div>
+        <br>
+      </div>            
+    </section>
+</div>
+<div id="footerContainer">
+  <script>
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footerContainer").innerHTML = data;
+      });
+  </script>
+</div>
 </body>
 </html>

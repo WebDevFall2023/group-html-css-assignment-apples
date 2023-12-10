@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Apple Fritter</title>
+  <head>
+    <title>Apple Juice</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-     <link rel = "stylesheet" type="text/css" href="productStyle.css">
+    <link rel = "stylesheet" type="text/css" href="productStyle.css">
+    <script defer src="products.js"></script>
 </head>
 <body>
-  <div id="navbarContainer">
+  </div><div id="navbarContainer">
     <script>
         fetch("navbar.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("navbarContainer").innerHTML = data;
           });
-      </script>
-      </div>
-    <div class="margin-top">
-        <div class="product">
-            <img class="fritter" src="images/FritterProduct.png" alt="Apple Fritter">
-            <h2>Apple Fritter</h2>
-            <p style="font-size: 90px;"><fritterCOlor>More flavor.</fritterCOlor></p>
-            <p style="font-size: 90px;"><fritterCOlor2>More savor.</fritterCOlor2></p>
-        </div>
-          <p>From $999 or $83.25/mo. for 12 mo.*</p>
-          <a href="payment.html" class="button">Buy</a>
-      
-          <div id="footerContainer">
+    </script>
+  </div>
     
-            <script>
-        
-              fetch("footer.html")
-                .then((response) => response.text())
-                .then((data) => {
-                  document.getElementById("footerContainer").innerHTML = data;
-                });
-            </script>
+  <div class="product" id="fritter">
+    <div class="description hiddenDesc">
+      <img class="fritter" src="images/FritterProduct.png" alt="Apple Fritter">
     </div>
+    <div class="description hiddenDescFritter">
+      <h2>Apple Fritter</h2>
+    </div>
+    <div class="description hiddenDescFritter">
+      <p style="font-size: 90px;"><fritterCOlor>More flavor.</fritterCOlor></p>
+    </div>
+    <div class="description hiddenDescFritter">
+      <p style="font-size: 90px;"><fritterCOlor2>More savor.</fritterCOlor2></p>
+    </div>
+    <div class="description hiddenDescFritter">
+      <p>From $999 or $83.25/mo. for 12 mo.*</p>
+    </div>
+    <div class="description hiddenDescFritter">
+      <a href="payment.html" class="button">Buy</a>
+    </div>
+  </div>            
+      
+  <div id="footerContainer">
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footerContainer").innerHTML = data;
+        });
+    </script>
+  </div>    
 </body>
 </html>

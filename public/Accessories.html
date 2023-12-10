@@ -4,7 +4,7 @@
     <title>Accessories</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel = "stylesheet" type="text/css" href="productStyle.css">
-
+    <script defer src="products.js"></script>
 </head>
 <body>
   <div id="navbarContainer">
@@ -14,43 +14,87 @@
           .then((data) => {
             document.getElementById("navbarContainer").innerHTML = data;
           });
-      </script>
-      </div>
-    <br>
-    <div class="margin-top">
-        <div class="product">
-            <h2>Apple Bag</h2> 
-            <p>$399.00</p>
-            <a href="payment.html" class="button">Buy</a>
-            <br>
-            <img src= "images/appleBag.png"alt="Apple Bag"> 
-            <br>
-            <br>
-            <br>
-            <h2>Apple Peeler</h2> 
-            <p>$149.00</p>
-            <a href="payment.html" class="button">Buy</a>
-            <img src= "images/applePeeler.png"alt="Apple Peeler"> 
-            <br>
-            <br>
-            <br>
-            <h2>Apple Corer</h2> 
-            <p>$59.00</p>
-            <a href="payment.html" class="button">Buy</a>
-            <br>
-            <img src= "images/appleCorer.png"alt="Apple Corer"> 
+    </script>
+  </div>
+  <div class="product">
+    <section class="hidden">
+      <div class="description">
+        <div class="description hiddenDesc">
+          <p style="color: #FF9500">New</p>
         </div>
-        <div id="footerContainer">
-    
-            <script>
-        
-              fetch("footer.html")
-                .then((response) => response.text())
-                .then((data) => {
-                  document.getElementById("footerContainer").innerHTML = data;
-                });
-            </script>
-        
-    </div>
+        <div class="description hiddenDesc">
+          <h2>Apple Bag</h2> 
+        </div>
+        <div class="description hiddenDesc">
+          <desc><redColor>Portable Sweetness</redColor> </desc>
+        </div>
+        <div class="description hiddenDesc">
+          <p>$399.00</p>
+        </div>
+        <div class="description hiddenDesc">
+          <a href="payment.html" class="button">Buy</a>
+        </div>
+        <div class="description hidden">
+          <img src= "images/appleBag.png"alt="Apple Bag"> 
+        </div>
+      </div>            
+    </section>
+
+    <section class="hidden">
+      <div class="description">
+        <div class="description hiddenDesc">
+          <p style="color: #FF9500">New</p>
+        </div>
+        <div class="description hiddenDesc">
+          <h2>Apple Peeler</h2> 
+        </div>
+        <div class="description hiddenDesc">
+          <desc><redColor>Appealing</redColor> </desc>
+        </div>
+        <div class="description hiddenDesc">
+          <p>$149.00</p>
+        </div>
+        <div class="description hiddenDesc">
+          <a href="payment.html" class="button">Buy</a>
+        </div>
+        <div class="description hidden">
+          <img src= "images/applePeeler.png"alt="Apple Peeler"> 
+        </div>
+      </div>            
+    </section>
+
+    <section class="hidden">
+      <div class="description">
+        <div class="description hiddenDesc">
+          <p style="color: #FF9500">New</p>
+        </div>
+        <div class="description hiddenDesc">
+          <h2>Apple Corer</h2> 
+        </div>
+        <div class="description hiddenDesc">
+          <desc><redColor>Effortless Coring</redColor> </desc>
+        </div>
+        <div class="description hiddenDesc">
+          <p>$59.00</p>
+        </div>
+        <div class="description hiddenDesc">
+          <a href="payment.html" class="button">Buy</a>
+        </div>
+        <div class="description hidden">
+          <img src= "images/appleCorer.png"alt="Apple Corer"> 
+        </div>
+      </div>            
+    </section>
+  </div>
+
+  <div id="footerContainer">
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footerContainer").innerHTML = data;
+        });
+    </script>
+  </div>           
 </body>
 </html>

@@ -4,6 +4,7 @@
     <title>Apples</title>
     <link rel="stylesheet" type="text/css" href="style.css" >
     <link rel = "stylesheet" type="text/css" href="productStyle.css">
+    <script defer src="products.js"></script>
 </head>
 <body>
   <div id="navbarContainer">
@@ -13,39 +14,87 @@
           .then((data) => {
             document.getElementById("navbarContainer").innerHTML = data;
           });
-      </script>
-      </div>
-    <br>
-    <div class="margin-top">
-        <div class="product">
-            <p style="color: #FF9500">New</p>
-            <h2>Red Pro</h2> 
-            <desc><redColor>Crimson Powerhouse</redColor> </desc>
-            <p>From $999 or $41.62/mo. for 24 mo.</p>
-            <a href="payment.html" class="button">Buy</a>
-            <img src= "images/Frame 1.png"alt="test"> 
-            <br>
-            <br>
-            <br>
-            <p style="color: #FF9500">New</p>
-            <h2>Fuji Max </h2> 
-            <desc><fujiColor>Fuji Fantasia</fujiColor></desc>
-            <p>From $799 or $33.29/mo. for 24 mo.</p>
-            <a href="payment.html" class="button">Buy</a>
-            <br>
-            <img src= "images/FujiNEW.png"alt="test"> 
+    </script>
+  </div>
+  <div class="product">
+    <section class="hidden">
+      <div class="description">
+        <div class="description hiddenDesc">
+          <p style="color: #FF9500">New</p>
         </div>
-        <div id="footerContainer">
-    
-            <script>
-        
-              fetch("footer.html")
-                .then((response) => response.text())
-                .then((data) => {
-                  document.getElementById("footerContainer").innerHTML = data;
-                });
-            </script>
-        
-    </div>
+        <div class="description hiddenDesc">
+          <h2>Red Pro Max</h2> 
+        </div>
+        <div class="description hiddenDesc">
+          <desc><redColor>Crimson Powerhouse</redColor> </desc>
+        </div>
+        <div class="description hiddenDesc">
+          <p>From $999 or $41.62/mo. for 24 mo.</p>
+        </div>
+        <div class="description hiddenDesc">
+          <a href="payment.html" class="button">Buy</a>
+        </div>
+        <div class="description hidden">
+          <img src="images/RedApple.png" alt ="Red Apple">
+        </div>
+      </div>            
+    </section>
+
+    <section class="hidden">
+      <div class="description">
+        <div class="description hiddenDesc">
+          <p style="color: #FF9500">New</p>
+        </div>
+        <div class="description hiddenDesc">
+          <h2>Fuji Pro </h2> 
+        </div>
+        <div class="description hiddenDesc">
+          <desc><fujiColor>Fuji Fantasia</fujiColor></desc>
+        </div>
+        <div class="description hiddenDesc">
+          <p>From $799 or $33.29/mo. for 24 mo.</p>
+        </div>
+        <div class="description hiddenDesc">
+          <a href="payment.html" class="button">Buy</a>
+        </div>
+        <div class="description hidden">
+          <img src= "images/FujiNEW.png"alt="Fuji Apple">
+        </div>
+      </div>            
+    </section>
+
+    <section class="hidden">
+      <div class="description">
+        <div class="description hiddenDesc">
+          <p style="color: #FF9500">New</p>
+        </div>
+        <div class="description hiddenDesc">
+          <h2>Granny Smith X</h2> 
+        </div>
+        <div class="description hiddenDesc">
+          <desc><grannyColor>Cripsy Elegance</grannyColor></desc>
+        </div>
+        <div class="description hiddenDesc">
+          <p>From $799 or $33.29/mo. for 24 mo.</p>
+        </div>
+        <div class="description hiddenDesc">
+          <a href="payment.html" class="button">Buy</a>
+        </div>
+        <div class="description hidden">
+          <img src= "images/Granny Smith.png"alt="Granny Smith Apple">
+        </div>
+      </div>            
+    </section>
+  </div>
+
+  <div id="footerContainer">
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footerContainer").innerHTML = data;
+        });
+    </script>
+  </div>      
 </body>
 </html>

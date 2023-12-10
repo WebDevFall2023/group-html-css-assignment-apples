@@ -1,3 +1,8 @@
+html {
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 45px;
+}
+
 img {
     margin-left: auto;
     margin-right: auto;
@@ -32,10 +37,36 @@ a.buy {
     cursor: pointer;
     border-radius: 16px;
 }
-.product {
-    margin: 0;
-    padding: 0;
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    scroll-snap-align: start;
 }
+#fritter{
+    min-height: 100vh;
+}
+
+.description:nth-child(1) {
+    transition-delay: 50ms;
+}
+.description:nth-child(2) {
+    transition-delay: 250ms;
+}
+.description:nth-child(3) {
+    transition-delay: 450ms;
+}
+.description:nth-child(4) {
+    transition-delay: 650ms;
+}
+.description:nth-child(5) {
+    transition-delay: 850ms;
+}
+.description:nth-child(6) {
+    transition-delay: 1250ms;
+}
+
 
 .product desc {
     font-weight: bolder;
@@ -45,50 +76,92 @@ a.buy {
     background: linear-gradient(to right, #EC483F, #EA3357);
     background-clip: text;
     color: transparent;
+    z-index: -1;
 }
 .product fujiColor {
     background: linear-gradient(to right, #DFA95F, #D75696);
     background-clip: text;
     color: transparent;
+    z-index: -1;
 }
+
+.product grannyColor {
+    background: linear-gradient(to right, #ffffff, #7bd756);
+    background-clip: text;
+    color: transparent;
+    z-index: -1;
+}
+
 .product juiceColor {
     background: linear-gradient(to bottom, #FFFFFF, #DFA95F);
     background-clip: text;
     color: transparent;
+    z-index: -1;
 }
 .product pieColor {
     background: linear-gradient(to right, #9E41F6, #DFA95F);
     background-clip: text;
     color: transparent;
+    z-index: -1;
 }
 .product sauceColor {
     background: linear-gradient(to right, #DFA95F, #3478F6);
     background-clip: text;
     color: transparent;
+    z-index: -1;
 }
 .product sauceColor2 {
     background: linear-gradient(to right, #3478F6, #DFA95F);
     background-clip: text;
     color: transparent;
+    z-index: -1;
 }
 .product fritterColor {
     font-weight: bolder;
     background: linear-gradient(to bottom, #FFFFFF, #838383);
     background-clip: text;
     color: transparent;
+    z-index: -1;
 }
 .product fritterColor2 {
     font-weight: bolder;
     background: linear-gradient(to bottom, #838383, #000000);
     background-clip: text;
     color: transparent;
+    z-index: -1;
 }
 .product candyColor {
     font-weight: bolder;
     background: linear-gradient(to right, #81CA59, #DFA95F);
     background-clip: text;
     color: transparent;
+    z-index: -1;
 }
 .product price {
     font-weight: bolder;
+}
+
+.hiddenDesc {
+    opacity: 0;
+    filter: blur(5px);    
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+.hiddenDescFritter {
+    opacity: 0;
+    filter: blur(5px);    
+    transform: translateY(100%);
+    transition: all 1s;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);    
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
 }
