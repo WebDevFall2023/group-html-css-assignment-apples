@@ -58,7 +58,7 @@ app.post("/register_user", async (req, res) => {
     var payload = req.body
     const connection = await pool.getConnection();
     await connection.execute(
-        'INSERT INTO user (user_name, email, password) VALUES (?,?,?)', [payload.userName, payload.email, payload.password]
+        'INSERT INTO user (user_name, email, password) VALUES (?,?,?)', [payload.username, payload.email, payload.password[0]]
     );
     connection.release();
     res.sendFile(path.join(__dirname, "public", "index.html"));
@@ -73,7 +73,7 @@ app.get("/login_user", async (req, res) => {
     var payload = req.body
     const connection = await pool.getConnection();
     var response = await connection.execute(
-        'SELECT * FROM user WHERE email = ?, password = ?', [payload.email, payload.password]
+        'SELECT * FROM user WHERE email = ?, password = ?', [payload.email, payload.password[0]]
     );
 
     console.log(response)
