@@ -73,7 +73,7 @@ app.post("/login_user", async (req, res) => {
     var payload = req.body
     const connection = await pool.getConnection();
     var response = await connection.execute(
-        'SELECT * FROM user WHERE email = ?, password = ?', [payload.email, payload.password]
+        'SELECT * FROM user WHERE email = ? AND password = ?', [payload.email, payload.password]
     );
     connection.release();
     res.sendFile(path.join(__dirname, "public", "index.html"));
