@@ -69,14 +69,12 @@ app.post("/register_user", async (req, res) => {
 
 app.get("/login_user", async (req, res) => {
     try {
-        console.log(req.body)
+    console.log(req.body)
     var payload = req.body
     const connection = await pool.getConnection();
     var response = await connection.execute(
         'SELECT * FROM user WHERE email = ?, password = ?', [payload.email, payload.password[0]]
     );
-
-    console.log(response)
     connection.release();
     res.sendFile(path.join(__dirname, "public", "index.html"));
     } catch (error) {
