@@ -75,56 +75,66 @@ section {
 .product redColor {
     background: linear-gradient(to right, #EC483F, #EA3357);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .product fujiColor {
     background: linear-gradient(to right, #DFA95F, #D75696);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .product grannyColor {
     background: linear-gradient(to right, #ffffff, #7bd756);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .product juiceColor {
     background: linear-gradient(to bottom, #FFFFFF, #DFA95F);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .product pieColor {
     background: linear-gradient(to right, #9E41F6, #DFA95F);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .product sauceColor {
     background: linear-gradient(to right, #DFA95F, #3478F6);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .product sauceColor2 {
     background: linear-gradient(to right, #3478F6, #DFA95F);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .product fritterColor {
     font-weight: bolder;
     background: linear-gradient(to bottom, #FFFFFF, #838383);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .product fritterColor2 {
     font-weight: bolder;
     background: linear-gradient(to bottom, #838383, #000000);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .product candyColor {
     font-weight: bolder;
     background: linear-gradient(to right, #81CA59, #DFA95F);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .product price {
