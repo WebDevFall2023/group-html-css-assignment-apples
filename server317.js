@@ -75,6 +75,8 @@ app.post("/login_user", async (req, res) => {
     var response = await connection.execute(
         'SELECT * FROM user WHERE email = ? AND password = ?', [payload.email, payload.password]
     );
+
+    console.log(response)
     connection.release();
     res.sendFile(path.join(__dirname, "public", "index.html"));
     } catch (error) {
