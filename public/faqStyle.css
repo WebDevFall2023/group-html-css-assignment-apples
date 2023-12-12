@@ -125,8 +125,8 @@ details[open] div {
 
 .glowing-border.rotate {
   /* Apply a rotation effect to the container */
-  transform: rotate(5deg);
-  transition: transform 0.5s ease;
+  transform: rotate(360deg);
+  transition: transform 1s ease;
 }
 
 
