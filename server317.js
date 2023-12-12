@@ -58,7 +58,7 @@ app.post("/register_user", async (req, res) => {
     var payload = req.body
     const connection = await pool.getConnection();
     await connection.execute(
-        'INSERT INTO user (user_name, email, password) VALUES (?,?,?)', [payload.userName, payload.email, payload.password[0]]
+        'INSERT INTO user (user_name, email, password) VALUES (?,?,?)', [payload.username, payload.email, payload.password[0]]
     );
     connection.release();
     res.sendFile(path.join(__dirname, "public", "index.html"));
