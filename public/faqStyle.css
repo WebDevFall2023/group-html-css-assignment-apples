@@ -97,3 +97,37 @@ details[open] div {
     width: 103%;
 }
 
+.newName.visible{
+  display: block;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: -1;
+    transform: translateY(0);
+  }
+}
+
+.newName {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.glowing-border.active {
+  /* Add a box-shadow to the active container */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.glowing-border.rotate {
+  /* Apply a rotation effect to the container */
+  transform: rotate(5deg);
+  transition: transform 0.5s ease;
+}
+
+
+
