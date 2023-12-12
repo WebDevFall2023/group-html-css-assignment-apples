@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>payment</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="navbarContainer">
+    <script>
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbarContainer").innerHTML = data;
+          });
+      </script>
+      </div>
+
+      <h1 class="title_h1">Order Confirmation</h1>
+      <div id="order_confirmation_div">
+        <p id="orderPlaced">Your order has successfully placed!<br>Thank you for your order.</p>
+        <img style="width: 350px; margin: 70px auto;" src="images/RedApple.png">
+        <a id="goToMain" href="index.html">Back to the Home Page</a>
+      </div>
+
+
+      <div id="footerContainer">
+    
+        <script>
+    
+          fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+              document.getElementById("footerContainer").innerHTML = data;
+            });
+        </script>
+</body>
+</html>

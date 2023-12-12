@@ -198,7 +198,7 @@ footer {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 2;
   margin-top: 20px;
 }
 
@@ -362,6 +362,31 @@ footer {
   width: 300px;
   height: 300px;
 }
+
+/* -------------- Order Confirmation -------------*/
+#order_confirmation_div {
+  margin-bottom: 300px;
+}
+
+#orderPlaced {
+  font-size: 22px;
+
+}
+#goToMain {
+  display: block;
+  width: 250px;
+  height: 34px;
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 100px auto;
+  padding-top: 5px;
+  background-color: #181818;
+  border-radius: 3px;
+}
+
+
+
 
 /* home page */
 .hero-main-container {

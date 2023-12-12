@@ -4,9 +4,9 @@ var message = 'CSC-317 startup template\n'
 var port = 3000;
 var path = require('path');
 var express = require('express');
-var app = express();
+const app = express();
 const fs = require('fs');
-const mysql = require("mysql2/promise")
+const mysql = require("mysql2/promise");
 
 var StaticDirectory = path.join(__dirname, 'public');
 
@@ -30,8 +30,7 @@ app.get("/payment", (req, res)=>{
     res.sendFile(path.join(__dirname, "public", "payment.html"));
 })
 
-app.post("/placeorder", (req, res)=>{
-
+app.post("/orderconfirmation", (req, res)=>{
     console.log('We are handling the user information!');
     console.log('------------ Contact Information ------------');
     console.log("First Name: " + req.body.first_name);
@@ -49,8 +48,9 @@ app.post("/placeorder", (req, res)=>{
     console.log("CVC: " + req.body.cvc);
 
     res.status(200);
-    res.send("Yor order has been placed!")
+    res.sendFile(path.join(__dirname, "public", "orderConfirmation.html"));
 })
+
 
 app.post("/register_user", async (req, res) => {
     try {
@@ -86,7 +86,7 @@ app.get("/login_user", async (req, res) => {
 
 app.listen(port, () => {
     console.log(`Listening on http://localhost:${port}/`);
-});
+})
 
 
 

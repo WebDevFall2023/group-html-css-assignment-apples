@@ -17,8 +17,8 @@
 
     <h1 class="title_h1">Checkout</h1>
 
+    <form action="/orderconfirmation" method="post">
     <div id="checkout">
-
         <section id="order_review">
             <h3>1. Order Review</h3>
             <div>
@@ -26,29 +26,6 @@
                 <p id="product_name">Fuji Fantasia</p>
                 <p id="quantity">Qty: 1</p>
                 <p id="price">$ 24</p>
-                
-            </div>
-        </section>
-
-        <form action="/placeorder" method="post">
-        <section id="summary">
-            <div id="summary_box">
-                <h3>Order Summary</h3>
-                <div id="summary_section">
-                    <section id="summary_category">
-                        <p>Subtotal</p>
-                        <p>Estimated Shipping</p>
-                        <p>Estimated Tax</p>
-                        <h4>Total</h4>
-                    </section>
-                    <section id="summary_prices">
-                        <p>$ 24.00</p>
-                        <p>$ 6.00</p>
-                        <p>$ 1.75</p>
-                        <h4>$ 31.75</h4>
-                    </section>
-                    <button type="submit">Place Order</button>
-                </div>
             </div>
         </section>
 
@@ -143,8 +120,30 @@
                 <p>CVC</p>
                 <input type="text" name="cvc" placeholder="ex. 000" title="Please enter numbers only.">
         </section>
-    </form>
+
+        <section id="summary">
+            <div id="summary_box">
+                <h3>Order Summary</h3>
+                <div id="summary_section">
+                    <section id="summary_category">
+                        <p>Subtotal</p>
+                        <p>Estimated Shipping</p>
+                        <p>Estimated Tax</p>
+                        <h4>Total</h4>
+                    </section>
+                    <section id="summary_prices">
+                        <p>$ 24.00</p>
+                        <p>$ 6.00</p>
+                        <p>$ 1.75</p>
+                        <h4>$ 31.75</h4>
+                    </section>
+                    <button type="submit">Place Order</button>
+                </div>
+            </div>
+        </section>
+    
     </div>
+    </form>
 
     <div id="footerContainer">
     
