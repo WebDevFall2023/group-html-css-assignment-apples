@@ -67,7 +67,7 @@ app.post("/register_user", async (req, res) => {
     }
 })
 
-app.get("/login_user", async (req, res) => {
+app.post("/login_user", async (req, res) => {
     try {
     console.log(req.body)
     var payload = req.body
